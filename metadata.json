@@ -1,0 +1,24 @@
+{
+  "name": "jbussdieker-compatibility",
+  "version": "0.0.1",
+  "author": "Joshua Bussdieker",
+  "summary": "Puppet compatibility management module",
+  "license": "MIT",
+  "source": "http://github.com/jbussdieker/puppet-compatibility",
+  "project_page": "http://github.com/jbussdieker/puppet-compatibility",
+  "issues_url": "https://github.com/jbussdieker/puppet-compatibility/issues",
+  "description": "This module is for testing operating system compatibility",
+  "operatingsystem_support": [
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [
+  ],
+  "tags": [
+    "compatibility"
+  ]
+}

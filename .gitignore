@@ -1,0 +1,4 @@
+spec/fixtures/
+pkg/
+log/
+.vagrant/
