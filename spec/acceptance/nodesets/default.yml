@@ -8,5 +8,5 @@ HOSTS:
     hypervisor : vagrant
 CONFIG:
   log_level: trace
-  quiet: false
+  quiet: true
   type: git
