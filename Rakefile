@@ -17,6 +17,7 @@ task :thing do
   nodes.each do |node|
     puts "############################# #{node} ##############################"
     pid = fork do
+      $stdout.sync = true
       exec("rake beaker BEAKER_destroy=yes BEAKER_set=#{node} BEAKER_provision=yes")
     end
     Process.wait
