@@ -7,6 +7,6 @@ HOSTS:
     box_url: https://vagrantcloud.com/puppetlabs/ubuntu-14.04-64-nocm
     hypervisor: vagrant
 CONFIG:
-  log_level: warn
+  log_level: trace
   quiet: true
   type: git
