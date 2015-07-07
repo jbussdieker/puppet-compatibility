@@ -1,11 +1,12 @@
 HOSTS:
-  debian-78-i386:
+  centos510:
     roles:
       - master
-    platform: debian-7-i386
-    box : puppetlabs/debian-7.8-32-nocm
+    platform: el-5-x86_64
+    box : boxcutter/centos510
     hypervisor : vagrant
 CONFIG:
   log_level: trace
   quiet: true
   type: git
+
