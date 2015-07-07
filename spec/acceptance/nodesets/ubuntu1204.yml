@@ -1,9 +1,9 @@
 HOSTS:
-  centos510:
+  ubuntu1204:
     roles:
       - master
-    platform: el-5-x86_64
-    box : boxcutter/centos510
+    platform: ubuntu-12.04-x86_64
+    box : boxcutter/ubuntu1204
     hypervisor : vagrant
 CONFIG:
   log_level: trace

@@ -1,9 +1,9 @@
 HOSTS:
-  centos510:
+  fedora20:
     roles:
       - master
-    platform: el-5-x86_64
-    box : boxcutter/centos510
+    platform: fedora-20-x86_64
+    box : boxcutter/fedora20
     hypervisor : vagrant
 CONFIG:
   log_level: trace

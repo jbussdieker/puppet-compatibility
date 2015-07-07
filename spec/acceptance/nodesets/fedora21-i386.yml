@@ -1,9 +1,9 @@
 HOSTS:
-  centos510:
+  fedora21-i386:
     roles:
       - master
-    platform: el-5-x86_64
-    box : boxcutter/centos510
+    platform: fedora-21-i386
+    box : boxcutter/fedora21-i386
     hypervisor : vagrant
 CONFIG:
   log_level: trace

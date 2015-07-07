@@ -1,9 +1,9 @@
 HOSTS:
-  centos510:
+  debian78:
     roles:
       - master
-    platform: el-5-x86_64
-    box : boxcutter/centos510
+    platform: debian-7-x86_64
+    box : boxcutter/debian78
     hypervisor : vagrant
 CONFIG:
   log_level: trace

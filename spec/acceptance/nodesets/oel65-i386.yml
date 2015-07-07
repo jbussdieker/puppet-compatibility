@@ -1,9 +1,9 @@
 HOSTS:
-  centos510:
+  oel65-i386:
     roles:
       - master
-    platform: el-5-x86_64
-    box : boxcutter/centos510
+    platform: el-6-i386
+    box : boxcutter/oel65-i386
     hypervisor : vagrant
 CONFIG:
   log_level: trace
