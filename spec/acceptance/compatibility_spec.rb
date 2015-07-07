@@ -16,5 +16,17 @@ describe 'compatibility' do
     it 'can list files' do
       shell('/bin/ls /')
     end
+
+    it 'ruby version' do
+      shell('ruby -v')
+    end
+
+    it 'gem version' do
+      shell('gem -v')
+    end
+
+    it 'facter version' do
+      shell('facter -p')
+    end
   end
 end
