@@ -17,12 +17,6 @@ describe 'compatibility' do
     end
   end
 
-  describe 'ruby' do
-    it 'should have a version' do
-      shell('ruby -v')
-    end
-  end
-
   describe 'facter' do
     it 'should have facts' do
       shell('facter -p')
