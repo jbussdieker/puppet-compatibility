@@ -14,7 +14,7 @@ task :beaker_all do
     node.slice!('.yml')
     File.basename(node)
   }
-  nodes.reverse.each do |node|
+  nodes.each do |node|
     puts "############################# #{node} ##############################"
     start_time = Time.now
     pid = fork do
