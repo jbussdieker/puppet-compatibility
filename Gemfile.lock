@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jbussdieker/beaker.git
-  revision: fa8d60d823ccfb5ea206ace280c838204fa06b27
+  revision: b2c6687fd0735f57baa18cae914b391c1aeb6414
   branch: jbussdieker-patch-1
   specs:
     beaker (2.16.0)
