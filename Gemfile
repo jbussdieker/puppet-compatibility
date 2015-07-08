@@ -8,6 +8,7 @@ group :development, :unit_tests do
 end
 
 group :system_tests do
+  gem 'beaker', github: 'jbussdieker/beaker'
   gem 'beaker-rspec', :require => false
   gem 'serverspec', :require => false
   gem 'beaker-puppet_install_helper', :require => false

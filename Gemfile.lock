@@ -1,3 +1,24 @@
+GIT
+  remote: git://github.com/jbussdieker/beaker.git
+  revision: a3429c39251d5e7c1384041a6555ac7ad0fdb365
+  specs:
+    beaker (2.16.0)
+      aws-sdk (~> 1.57)
+      docker-api
+      fission (~> 0.4)
+      fog (~> 1.25)
+      google-api-client (~> 0.8)
+      hocon (~> 0.1)
+      inifile (~> 2.0)
+      json (~> 1.8)
+      minitest (~> 5.4)
+      net-scp (~> 1.2)
+      net-ssh (~> 2.9)
+      open_uri_redirections (~> 0.2.1)
+      rbvmomi (~> 1.8)
+      rsync (~> 1.0.9)
+      unf (~> 0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,21 +39,6 @@ GEM
     aws-sdk-v1 (1.64.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
-    beaker (2.14.1)
-      aws-sdk (~> 1.57)
-      docker-api
-      fission (~> 0.4)
-      fog (~> 1.25)
-      google-api-client (~> 0.8)
-      hocon (~> 0.1)
-      inifile (~> 2.0)
-      json (~> 1.8)
-      minitest (~> 5.4)
-      net-scp (~> 1.2)
-      net-ssh (~> 2.9)
-      rbvmomi (~> 1.8)
-      rsync (~> 1.0.9)
-      unf (~> 0.1)
     beaker-puppet_install_helper (0.2.0)
       beaker (~> 2.0)
     beaker-rspec (5.1.0)
@@ -53,12 +59,12 @@ GEM
       multipart-post (>= 1.2, < 3)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (1.31.0)
+    fog (1.32.0)
       fog-atmos
-      fog-aws (~> 0.0)
+      fog-aws (>= 0.6.0)
       fog-brightbox (~> 0.4)
-      fog-core (~> 1.30)
-      fog-ecloud
+      fog-core (~> 1.32)
+      fog-ecloud (= 0.1.1)
       fog-google (>= 0.0.2)
       fog-json
       fog-local
@@ -79,7 +85,7 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (0.6.0)
+    fog-aws (0.7.0)
       fog-core (~> 1.27)
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
@@ -88,17 +94,17 @@ GEM
       fog-core (~> 1.22)
       fog-json
       inflecto (~> 0.0.2)
-    fog-core (1.31.1)
+    fog-core (1.32.0)
       builder
       excon (~> 0.45)
       formatador (~> 0.2)
       mime-types
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
-    fog-ecloud (0.3.0)
+    fog-ecloud (0.1.1)
       fog-core
       fog-xml
-    fog-google (0.0.6)
+    fog-google (0.0.7)
       fog-core
       fog-json
       fog-xml
@@ -168,7 +174,7 @@ GEM
       signet (~> 0.6)
     hiera (1.3.4)
       json_pure
-    hocon (0.9.0)
+    hocon (0.9.2)
     i18n (0.7.0)
     inflecto (0.0.2)
     inifile (2.0.2)
@@ -199,6 +205,7 @@ GEM
     net-ssh (2.9.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    open_uri_redirections (0.2.1)
     puppet (3.8.1)
       facter (> 1.6, < 3)
       hiera (~> 1.0)
@@ -269,6 +276,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  beaker!
   beaker-puppet_install_helper
   beaker-rspec
   facter
