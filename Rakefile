@@ -19,7 +19,7 @@ task :beaker_all do
     start_time = Time.now
     pid = fork do
       $stdout.sync = true
-      exec("rake beaker PUPPET_VERSION=3.4.3 BEAKER_destroy=yes BEAKER_set=#{node} BEAKER_provision=yes")
+      exec("rake beaker BEAKER_destroy=yes BEAKER_set=#{node} BEAKER_provision=yes")
     end
     Process.wait
     end_time = Time.now
