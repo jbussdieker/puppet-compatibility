@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/jbussdieker/beaker.git
-  revision: a3429c39251d5e7c1384041a6555ac7ad0fdb365
+  revision: fa8d60d823ccfb5ea206ace280c838204fa06b27
+  branch: jbussdieker-patch-1
   specs:
     beaker (2.16.0)
       aws-sdk (~> 1.57)
