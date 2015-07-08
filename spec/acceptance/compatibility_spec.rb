@@ -7,26 +7,24 @@ describe 'compatibility' do
     EOS
   }
 
-  describe 'running puppet code' do
+  describe 'puppet run' do
     it 'should work with no errors' do
-      # Run it twice and test for idempotency
       apply_manifest(manifest, :catch_failures => true)
-      expect(apply_manifest(manifest, :catch_changes => true).exit_code).to be_zero
     end
 
-    it 'can list files' do
-      shell('/bin/ls /')
+    it 'should be idempotent' do
+      apply_manifest(manifest, :catch_changes => true)
     end
+  end
 
-    it 'ruby version' do
+  describe 'ruby' do
+    it 'should have a version' do
       shell('ruby -v')
     end
+  end
 
-    it 'gem version' do
-      shell('gem -v')
-    end
-
-    it 'facter version' do
+  describe 'facter' do
+    it 'should have facts' do
       shell('facter -p')
     end
   end

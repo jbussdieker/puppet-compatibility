@@ -1,7 +1,8 @@
 class compatibility {
 
   file { '/foo':
-    ensure => directory,
+    ensure  => directory,
+    seltype => 'default_t',
   }
 
 }
